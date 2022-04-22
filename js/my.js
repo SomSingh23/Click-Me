@@ -22,7 +22,7 @@ y.addEventListener("click", function () {
   y.textContent = `you clicked me ${ctr} times 😎`;
   let su = document.querySelector(".madh");
   let new_element = document.createElement("h4");
-  new_element.textContent = ` count: ${ctr}`;
+  new_element.textContent = `count: ${ctr}`;
   su.appendChild(new_element);
   let me_j = document.querySelector("body");
   if (ctr == 100) {
@@ -35,3 +35,4 @@ y.addEventListener("click", function () {
 y.addEventListener("mouseover", function () {
   console.log("mouse over me");
 });
+// NotIncludedInThisFile
