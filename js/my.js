@@ -10,18 +10,28 @@
 // y.style.color = "white";
 let ctr = 0;
 let y = document.querySelector("button");
-y.onclick = function () {
+y.addEventListener("click", function () {
   ctr++;
-  y.style.border = "2px solid white";
+  //   if (ctr == 1) {
+  //     y.style.position = "absolute";
+  //     y.style.top = "-30";
+  //     y.style.left = "50";
+  //   }
+  //   y.style.border = "2px solid rgb(255, 0, 247)";
+  y.style.border = "2px solid rgb(0, 255, 242)";
   y.textContent = `you clicked me ${ctr} times 😎`;
-  let suar = document.querySelector(".madh");
+  let su = document.querySelector(".madh");
   let new_element = document.createElement("h4");
   new_element.textContent = ` count: ${ctr}`;
-  suar.appendChild(new_element);
+  su.appendChild(new_element);
   let me_j = document.querySelector("body");
   if (ctr == 100) {
     alert("Bass Kar Bhai 🤣😂");
   }
   me_j.style.background = "black";
   me_j.style.color = "white";
-};
+});
+
+y.addEventListener("mouseover", function () {
+  console.log("mouse over me");
+});

@@ -4,19 +4,22 @@ body {
 body {
   margin: 0 0 0 0;
 }
-.button {
-  height: 200px;
+/* .button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-button {
+} */
+/* button {
+  margin-top: 40px;
   height: 60px;
   width: 150px;
-  background-color: black;
-  color: white;
-  transition: all linear 10ms;
-}
+  background-image: linear-gradient(to right, #FBD3E9 0%, #BB377D  51%, #FBD3E9  100%)
+  transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px
+} */
 /* button:hover {
   color: black;
   background-color: white;
@@ -25,7 +28,41 @@ h4 {
   margin-left: 8px;
   display: block;
   float: left;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 1s;
 }
 .lol {
   margin: 0 auto;
+}
+h4:hover {
+  color: rgb(0, 47, 255);
+  transform: scale(1.14, 1.14);
+}
+
+button {
+  background-image: linear-gradient(
+    to right,
+    #00ccff 0%,
+    #0800ef 51%,
+    #009efa 100%
+  );
+}
+button {
+  margin: 50px auto 0;
+  font-size: 20px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 20px rgb(0, 247, 255);
+  border-radius: 10px;
+  display: block;
+}
+
+button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
